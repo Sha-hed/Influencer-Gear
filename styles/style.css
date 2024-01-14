@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 50px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-list {
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.banner {
+    margin-bottom: 100px;
+}
+
+.banner-title {
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.banner-des {
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    padding: 10px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.banner-text {
+    width: 50%;
+}
+
+.banner-img {
+    margin-left: 100px;
+    width: 50%;
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+}
+
+.sponsors-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 100px 25px;
+    align-items: center;
+}
+
+.spon hr {
+    width: 80%;
+    margin-bottom: 25px;
+    color: linear-gradient(90deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+}
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.popular {
+    width: 70%;
+    margin: 100px auto;
+}
+
+.img-title {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 1px;
+    margin-bottom: 0;
+}
+
+.img-price {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+.section-details {
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.img-box {
+    width: 300px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.img-box .rating a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #5E6366;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.section-title {
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popular a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 930px;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.last {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec-img {
+    width: 50%;
+}
+
+.sec-text {
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+.sec-title {
+    color: #0A0826;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5px;
+}
+
+.se-text {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer {
+    background: #0A0826;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.copyrights {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer i {
+    margin-right: 20px;
+    font-size: 20px;
+}
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .last, .banner {
+        flex-direction: column-reverse;
+    }
+
+    .sec-img, .sec-text, .banner-img,
+    .banner-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .sponsors-container {
+        flex-wrap: wrap;
+        margin: 20px;
+        gap: 30px;
+    }
+
+    .collection-container {
+        grid-template-columns: 1fr;
+    }
+    .popular a{
+        margin-left: 150px;
+    }
+
+}
