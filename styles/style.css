@@ -83,8 +83,6 @@ nav a {
 .banner-img {
     margin-left: 100px;
     width: 50%;
-    background-image: url('../images/Circle\ design.svg');
-    background-repeat: no-repeat;
 }
 
 .sponsors-container {
@@ -155,7 +153,7 @@ nav a {
     text-align: center;
 }
 
-/* .popular a {
+.popular a {
     display: inline-block;
     margin-top: 30px;
     text-decoration: none;
@@ -164,7 +162,7 @@ nav a {
     color: rgba(224, 44, 109, 0.87);
     font-size: 16px;
     font-weight: 700;
-} */
+}
 
 .last {
     display: flex;
@@ -221,46 +219,4 @@ footer {
 footer i {
     margin-right: 20px;
     font-size: 20px;
-}
-@media screen and (max-width: 576px) {
-    nav {
-        flex-direction: column;
-    }
-
-    .last, .banner {
-        flex-direction: column-reverse;
-    }
-
-    .sec-img, .sec-text,
-    .banner-text {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
-    .banner-img{
-        width: 60%;
-        border: 2px solid red;
-        margin-right: 100px;
-        padding-right: 0px;
-    }
-    .banner-img img{
-        width: 100%;
-    }
-    hr {
-        display: none;
-    }
-
-    .sponsors-container {
-        flex-wrap: wrap;
-        margin: 20px;
-        gap: 30px;
-    }
-
-    .collection-container {
-        grid-template-columns: 1fr;
-    }
-    /* .popular a{
-        margin-left: 150px;
-    } */
-
-}
+} 
